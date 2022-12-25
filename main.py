@@ -1,12 +1,7 @@
-# Birthday Program
-birth_year = input('What year were you born? ')
-age = 2022 - int(birth_year)
-print(f'Your age is: {age}')
+friends = ['Simon', 'Patty', 'Joy', 'Carrie', 'Amira', 'Chu']
 
-#Password Checker Program
-username = input('What is your username? ')
-password = input('What is your password? ')
-password_length = len(password)
-masked_password = '*' * password_length
+new_friend = ['Stanley']
 
-print(f'{username}, your password {masked_password} is ({password_length}) letters long')
+friends.extend(new_friend)
+
+print(sorted(friends))
